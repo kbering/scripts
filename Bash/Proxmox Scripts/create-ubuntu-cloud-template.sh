@@ -112,8 +112,8 @@ install_package() {
             exit 0
         elif [[ "$user_choice" == "Y" || "$user_choice" == "y" ]]; then
             # Install the required packages using apt-get with -y flag for automatic "yes" to prompts.
-            sudo apt-get update
-            sudo apt-get install -y "${REQUIRED_PKG[@]}"
+            apt-get update
+            apt-get install -y "${REQUIRED_PKG[@]}"
 
             # Check the exit status of apt-get to see if the installation was successful.
             if [ $? -eq 0 ]; then
