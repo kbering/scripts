@@ -318,7 +318,7 @@ create_vm() {
     qm set $VMID --cipassword "$CLOUD_PASSWORD"
     qm set $VMID --boot c --bootdisk scsi0
     qm set $VMID --tablet 0
-    qm set $VMID --ipconfig0 ip=dhcp
+    qm set $VMID --ipconfig0 ip=dhcp4
     qm cloudinit update $VMID
     qm set $VMID --description "$NOTES"
 }
