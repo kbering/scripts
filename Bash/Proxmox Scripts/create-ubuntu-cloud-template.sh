@@ -111,7 +111,7 @@ install_package() {
             echo "Package installation aborted."
             exit 0
         elif [[ "$user_choice" == "Y" || "$user_choice" == "y" ]]; then
-            # Install the required packages using apt-get with -y flag for automatic "yes" to prompts.
+            # Install the required packages using apt-get with -y flag for automatic "yes" to prompts
             apt-get update
             apt-get install -y "${REQUIRED_PKG[@]}"
 
