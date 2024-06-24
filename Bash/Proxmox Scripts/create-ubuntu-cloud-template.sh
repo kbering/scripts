@@ -33,7 +33,7 @@ DISK_STOR="local" # Name of disk storage within Proxmox
 FSTRIM="1"
 MACHINE="q35" # Type of machine. Q35 or i440fx
 MEM="2048" # Max RAM
-NET_BRIDGE="vmbr1" # Network bridge name
+NET_BRIDGE="lan" # Network bridge name
 TAG="template"
 
 OS_TYPE="l26" # OS type (Linux 6x - 2.6 Kernel)
